@@ -1,26 +1,44 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Das ist ein kleines Beispiel für ein (langweiliges) Exit Game. \nIhr könnt es besser, viel Spaß! ");
-Console.WriteLine("-----------------------------------------------------------------------");
-
-
-Console.WriteLine("Geisterspiel");
-int punkte = 0;
-bool gameover = false;
-Random random = new Random();
-while (gameover == false)
+using System;
+public class Program
 {
-    Console.WriteLine("Hinter einer Tür verbirgt sich ein Geist.\nWelche Tür wählst du? 1, 2 oder 3?");
-    int tuer = Convert.ToInt32(Console.ReadLine());
-    int geisterTuer = random.Next(1, 4);
-    if (tuer == geisterTuer)
+    public static void Main()
     {
-        Console.WriteLine("Game over! Hier ist ein Geist!");
-        Console.WriteLine("Deine Punkte: {0}", punkte);
-        gameover = true;
+        Hoehle Hoehle1 = new Hoehle ();
+        Hoehle1.HoehlenNr = 1;
+        Hoehle1.CharackterAnw = true;
+        Hoehle1.Zugang = true;
+        Hoehle1.Goldspuren = false;
+        Hoehle1.Kreaturen = false;
+        Hoehle1.NaechsteRaum[0] = 2;
+        Hoehle1.XatarsGold = false;
+        
+        Hoehle Hoehle2 = new Hoehle ();
+        Hoehle2.HoehlenNr = 2;
+        Hoehle2.CharackterAnw = true;
+        Hoehle2.Zugang = true;
+        Hoehle2.Goldspuren = false;
+        Hoehle2.Kreaturen = false;
+        Hoehle2.NaechsteRaum[0]=1;
+        Hoehle2.NaechsteRaum[1]=3;
+        Hoehle2.NaechsteRaum[2]=4;
+        Hoehle2.XatarsGold = false;
+        
+        Hoehle Hoehle3 = new Hoehle ();
+        Hoehle3.HoehlenNr = 3;
+        Hoehle3.CharackterAnw = true;
+        Hoehle3.Zugang = true;
+        Hoehle3.Goldspuren = true;
+        Hoehle3.Kreaturen = false;
+        Hoehle3.NaechsteRaum[0] = 2;
+        Hoehle3.XatarsGold = false;
+        
+        Hoehle Hoehle4 = new Hoehle ();
+        Hoehle4.HoehlenNr = 4;
+        Hoehle4.CharackterAnw = true;
+        Hoehle4.Zugang = true;
+        Hoehle4.Goldspuren = false;
+        Hoehle4.Kreaturen = false;
+        Hoehle4.NaechsteRaum[0] = 2;
+        Hoehle4.XatarsGold = true;
     }
-    else
-    {
-        Console.WriteLine("Kein Geist gefunden!");
-        punkte = punkte + 1;
     }
-}
