@@ -1,0 +1,15 @@
+/Users/anas_100/Downloads/escapegame-die-kurdischen_krieger/EscapeGame/obj/Debug/net8.0/EscapeGame.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anas_100/Downloads/escapegame-die-kurdischen_krieger/EscapeGame/obj/Debug/net8.0/EscapeGame.AssemblyInfoInputs.cache
+/Users/anas_100/Downloads/escapegame-die-kurdischen_krieger/EscapeGame/obj/Debug/net8.0/EscapeGame.AssemblyInfo.cs
+/Users/anas_100/Downloads/escapegame-die-kurdischen_krieger/EscapeGame/obj/Debug/net8.0/EscapeGame.csproj.CoreCompileInputs.cache
+/Users/anas_100/Downloads/escapegame-die-kurdischen_krieger/EscapeGame/obj/Debug/net8.0/EscapeGame.sourcelink.json
+/Users/anas_100/Downloads/escapegame-die-kurdischen_krieger/EscapeGame/bin/Debug/net8.0/EscapeGame
+/Users/anas_100/Downloads/escapegame-die-kurdischen_krieger/EscapeGame/bin/Debug/net8.0/EscapeGame.deps.json
+/Users/anas_100/Downloads/escapegame-die-kurdischen_krieger/EscapeGame/bin/Debug/net8.0/EscapeGame.runtimeconfig.json
+/Users/anas_100/Downloads/escapegame-die-kurdischen_krieger/EscapeGame/bin/Debug/net8.0/EscapeGame.dll
+/Users/anas_100/Downloads/escapegame-die-kurdischen_krieger/EscapeGame/bin/Debug/net8.0/EscapeGame.pdb
+/Users/anas_100/Downloads/escapegame-die-kurdischen_krieger/EscapeGame/obj/Debug/net8.0/EscapeGame.dll
+/Users/anas_100/Downloads/escapegame-die-kurdischen_krieger/EscapeGame/obj/Debug/net8.0/refint/EscapeGame.dll
+/Users/anas_100/Downloads/escapegame-die-kurdischen_krieger/EscapeGame/obj/Debug/net8.0/EscapeGame.pdb
+/Users/anas_100/Downloads/escapegame-die-kurdischen_krieger/EscapeGame/obj/Debug/net8.0/EscapeGame.genruntimeconfig.cache
+/Users/anas_100/Downloads/escapegame-die-kurdischen_krieger/EscapeGame/obj/Debug/net8.0/ref/EscapeGame.dll
