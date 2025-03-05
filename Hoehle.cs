@@ -6,6 +6,6 @@ class Hoehle {
 	public bool Zugang;
 	public bool Goldspuren;
 	public bool Kreaturen;
-	public int[] NaechsteRaum = new int [2];
+	public int[] NaechsteRaum = new int [3];
 	public bool XatarsGold;
 }
