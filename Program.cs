@@ -40,5 +40,8 @@ public class Program
         Hoehle4.Kreaturen = false;
         Hoehle4.NaechsteRaum[0] = 2;
         Hoehle4.XatarsGold = true;
+
+        Startmenue startmenue = new Startmenue();
+        startmenue.Execute();
     }
     }
