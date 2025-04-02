@@ -6,11 +6,20 @@ using System.Threading.Tasks;
 
 namespace ExitGame
 {
-    public static class Globals
+    static class Spiel
     {
-        public static int punkte = 0;
-        public static bool gameover = false;
-        public static Random random = new Random();
-        public static Hoehle aktuellerHoehle;
+        public static void Spielstart()
+        {
+            while (true)
+            {
+                Console.WriteLine("test");
+                int naechsterHoehle = Navigation.Next() - 1;
+                Globals.aktuellerHoehle = Hoehle.alleHoehle[naechsterHoehle];
+                Hoehle.alleHoehle[naechsterHoehle].HoehleBetreten();
+                Hoehle.alleHoehle[naechsterHoehle].RaetselAnzeigen();
+
+            }
+
+        }
     }
 }
