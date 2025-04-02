@@ -6,66 +6,31 @@ using System.Threading.Tasks;
 
 namespace ExitGame
 {
-    internal class Startmenue : AbstractAction
+    static class Menue
     {
-        public  override void Execute()
+        public static void MenueAnzeigen()
         {
-            bool running = true;
             while (true)
             {
-                Console.Clear();
-                Console.WriteLine("Willkommen zu Xatars Gold!");
-                Console.WriteLine("1. Spiel starten");
-                Console.WriteLine("2. Zurück");
-                Console.WriteLine("3. Anleitungen");
-                Console.WriteLine("4. Beenden");
-                Console.Write("Bitte wähle eine Option: ");
+                Console.WriteLine("Herzlich Willkommen zum Spiel finde Xatars Gold. Bitte wählen Sie eine Option:");
+                Console.WriteLine("1. Spiel beginnen");
+                Console.WriteLine("2. Beenden");
 
+                string auswahl = Console.ReadLine();
 
-                string input = Console.ReadLine();
-
-                switch (input)
+                switch (auswahl)
                 {
                     case "1":
-                        StartGame();
+                        Spiel.Spielstart();
+
                         break;
                     case "2":
                         return;
-                        break;
-                    case "3":
-                        ShowInstructions();
-                        break;
-                    case "4":
-                        running = false;
-                        break;
                     default:
-                        Console.WriteLine("Ungültige Eingabe. Bitte wähle 1, 2 oder 3.");
-                        Console.WriteLine("Drücke eine Taste, um fortzufahren...");
-                        Console.ReadKey();
+                        Console.WriteLine("Ungültige Auswahl. Bitte versuchen Sie es erneut.");
                         break;
-                }
-
-                static void StartGame()
-                {
-                    Console.Clear();
-                    Console.WriteLine("Das Spiel beginnt jetzt...");
-                    Console.WriteLine("Drücke eine Taste, um zum Menü zurückzukehren...");
-                    Console.ReadKey();
-                }
-
-                static void ShowInstructions()
-                {
-                    Console.Clear();
-                    Console.WriteLine("Anleitungen:");
-                    Console.WriteLine("1. Erkunde die Umgebung.");
-                    Console.WriteLine("2. Löse Rätsel, um voranzukommen.");
-                    Console.WriteLine("3. Finde Xatars Gold!");
-                    Console.WriteLine("Drücke eine Taste, um zum Menü zurückzukehren...");
-                    Console.ReadKey();
                 }
             }
-
         }
-        
     }
 }
