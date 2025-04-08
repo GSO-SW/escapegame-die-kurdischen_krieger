@@ -12,7 +12,7 @@ namespace ExitGame
         {
             while (true)
             {
-                Console.WriteLine("test");
+                Console.WriteLine("Wählen Sie eine Zahl");
                 int naechsterHoehle = Navigation.Next() - 1;
                 Globals.aktuellerHoehle = Hoehle.alleHoehle[naechsterHoehle];
                 Hoehle.alleHoehle[naechsterHoehle].HoehleBetreten();
