@@ -4,22 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExitGame
+namespace BFT32_Escape_Game
 {
-    static class Spiel
+    public static class Globals
     {
-        public static void Spielstart()
-        {
-            while (true)
-            {
-                Console.WriteLine("test");
-                int naechsterHoehle = Navigation.Next() - 1;
-                Globals.aktuellerHoehle = Hoehle.alleHoehle[naechsterHoehle];
-                Hoehle.alleHoehle[naechsterHoehle].HoehleBetreten();
-                Hoehle.alleHoehle[naechsterHoehle].RaetselAnzeigen();
+        public static int punkte = 0;
+        public static bool gameover = false;
+        public static Random random = new Random();
+        public static Raum aktuellerRaum;
 
-            }
 
-        }
     }
 }
