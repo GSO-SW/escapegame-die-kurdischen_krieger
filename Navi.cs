@@ -12,28 +12,28 @@ namespace ExitGame
         public static int Next()
         {
             int naechsterHoehle = 0;
-            Console.WriteLine("In welchen Raum möchtest du gehen? W = Werkstatt, T = Toilette, B = Büro, L = Lager");
+            Console.WriteLine("In welchen Raum möchtest du gehen? 1 = Höhle1, 2 = Höhle2, 3 = Höhle3, 4 = Höhle4");
 
-            if (Console.ReadLine() == "W")
+            if (Console.ReadLine() == "1")
             {
                 naechsterHoehle = 1;
             }
-            else if (Console.ReadLine() == "T")
+            else if (Console.ReadLine() == "2")
             {
                 naechsterHoehle = 2;
             }
 
-            else if (Console.ReadLine() == "B")
+            else if (Console.ReadLine() == "3")
             {
                 naechsterHoehle = 3;
             }
 
-            else if (Console.ReadLine() == "L")
+            else if (Console.ReadLine() == "4")
             {
                 naechsterHoehle = 4;
             }
 
-            else Console.WriteLine("Bitte geben Sie T, B oder L an.");
+            else Console.WriteLine("Bitte geben Sie 1, 2 oder 4 an.");
 
             return naechsterHoehle;
         }
