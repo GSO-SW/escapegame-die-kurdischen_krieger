@@ -65,7 +65,7 @@ using System.Xml.Linq;
 
         //Raum werkstatt wird erzeugt und der Liste "alleRaeume" hinzufügen
         //Werkstatt ist eine abgeleitete Klasse von Raum, s. Datei Werkstatt.cs)
-        alleHoehle.Add(new Hoehle(1, true, true, false, false,naechsteHoehle_von1 , false));
+            alleHoehle.Add(new Hoehle(1, true, true, false, false,naechsteHoehle_von1 , false));
             alleHoehle.Add(new Hoehle(2, true, true, false, false,naechsteHoehle_von2 , false));
             alleHoehle.Add(new Hoehle(3, true, true, true, false,naechsteHoehle_von3 , false));
             alleHoehle.Add(new Hoehle(4, true, true, false, false,naechsteHoehle_von4 , true));
@@ -78,30 +78,35 @@ using System.Xml.Linq;
         //Raum kann betreten werden mit dieser Methode
         public void HoehleBetreten()
         {
-            Globals.aktuellerHoehle = this;
+        Globals.aktuellerHoehle = this;
         }
 
         //eine virtuelle Methode, die für alle Räume speziell implementiert werden kann (s. Beispiel Werkstatt)
-        public void RaetselAnzeigen()
+        public void RaetselAnzeigen(){
+
+        if (Globals.aktuelleHoehlenNr == 1)
         {
-            if (this.HoehlenNr == 1)
-            {
-                Console.WriteLine("Hinter einer Tür verbirgt sich ein Geist.\nWelche Tür wählst du? 1, 2 oder 3?");
-                int tuer = Convert.ToInt32(Console.ReadLine());
-                int geisterTuer = Globals.random.Next(1, 4);
-                if (tuer == geisterTuer)
-                {
-                    Console.WriteLine("Game over! Hier ist ein Geist!");
-                    Console.WriteLine("Deine Punkte: {0}", Globals.punkte);
-                    Globals.gameover = true;
-                }
-                else
-                {
-                    Console.WriteLine("Kein Geist gefunden!");
-                    Globals.punkte = Globals.punkte + 1;
-                }
-            }
+               quiz.Quiz(quiz.frage1, quiz.antworten1, quiz.richtigeAntwort1);
+
+
         }
+        else if (Globals.aktuelleHoehlenNr == 2)
+        {
+            quiz.Quiz(quiz.frage2, quiz.antworten2, quiz.richtigeAntwort2);
+
+        }
+        else if(Globals.aktuelleHoehlenNr == 3)
+        {
+            Console.WriteLine("Du bist in Höhle 3.");
+            quiz.Quiz(quiz.frage8, quiz.antworten8, quiz.richtigeAntwort8);
+
+        }
+        else if (Globals.aktuelleHoehlenNr == 4)
+        {
+            quiz.Quiz(quiz.frage16, quiz.antworten16, quiz.richtigeAntwort16);
+
+        }
+    }
 
 
 
