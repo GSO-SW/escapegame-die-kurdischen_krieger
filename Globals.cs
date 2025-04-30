@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BFT32_Escape_Game
+namespace ExitGame
 {
     public static class Globals
     {
@@ -12,6 +12,7 @@ namespace BFT32_Escape_Game
         public static bool gameover = false;
         public static Random random = new Random();
         public static Hoehle aktuellerHoehle;
+        public static int aktuelleHoehlenNr;
 
 
     }
