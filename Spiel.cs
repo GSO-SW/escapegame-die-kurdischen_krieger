@@ -13,10 +13,14 @@ namespace ExitGame
             while (true)
             {
                 Console.WriteLine("Wählen Sie eine Zahl");
-                int naechsterHoehle = Navigation.Next() - 1;
-                Globals.aktuellerHoehle = Hoehle.alleHoehle[naechsterHoehle];
-                Hoehle.alleHoehle[naechsterHoehle].HoehleBetreten();
-                Hoehle.alleHoehle[naechsterHoehle].RaetselAnzeigen();
+                Navigation.Next();
+ 
+                Console.WriteLine($"Sie möchten in Höhle {Globals.aktuelleHoehlenNr} gehen.");
+                
+                Globals.aktuellerHoehle = Hoehle.alleHoehle[Globals.aktuelleHoehlenNr];
+                Hoehle.alleHoehle[Globals.aktuelleHoehlenNr].HoehleBetreten();
+                Hoehle.alleHoehle[Globals.aktuelleHoehlenNr].RaetselAnzeigen();
+                
 
             }
 
